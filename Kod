@@ -1,0 +1,28 @@
+public class Yazokuluicincalisma4 {
+    public static void main(String[] args) {
+    Scanner k=new Scanner(System.in);
+    //klavyeden rastgele girilen sayilar icinde cift olanlar ekrana yazan ve bunların ortalamasını bulan pr
+    //9999 girilmişse duran pr yazın
+        System.out.println("Integer bir sayi giriniz");
+  
+        int cift = 0;
+        int cifttoplam = 0;
+        int ortalama = 0;
+        for (;;) {
+            int sayi = k.nextInt();
+            if (sayi % 2 == 0) {
+                System.out.println(sayi + " sayisi cift sayidir");
+                cift = cift + 1;
+                cifttoplam = cifttoplam + sayi;
+                ortalama = (cifttoplam / cift);
+                System.out.println("cift sayilarin ortalamasi " + (double) +ortalama + " dir");
+            } else if (sayi == 9999) {
+                System.out.println("9999 girdiniz bu yuzden sistemden cikiyorsunuz Girdiginiz cift sayilarin ortalaması " + (double) +ortalama + " dir");
+                System.exit(1);
+
+            } else if (sayi % 2 == 1) {
+                System.out.println("Girdiginiz sayi tek sayidir ve girilen cift sayilarin ortalamasi " + (double) +ortalama + " dir");        
+   }      
+   }    
+}
+}
